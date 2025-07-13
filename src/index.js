@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskList = document.getElementById("tasks");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent page reload
+    event.preventDefault(); // Prevents the page from reloading
 
     const taskInput = document.getElementById("new-task-description");
     const taskText = taskInput.value.trim();
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const li = document.createElement("li");
       li.textContent = taskText;
 
-      // Opted to add  a delete button
+      // Opted to add a delete button
       const deleteBtn = document.createElement("button");
       deleteBtn.textContent = " Undo";
       deleteBtn.style.marginLeft = "10px";
