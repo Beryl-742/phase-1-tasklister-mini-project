@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const li = document.createElement("li");
       li.textContent = taskText;
 
-      // Optional: Add delete button
+      // Opted to add  a delete button
       const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = " X";
+      deleteBtn.textContent = " Undo";
       deleteBtn.style.marginLeft = "10px";
       deleteBtn.addEventListener("click", () => {
         li.remove();
